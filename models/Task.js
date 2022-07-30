@@ -6,8 +6,7 @@ const TaskSchema = new mongoose.Schema({
         //*'Name required' is a custom message when the following validation fails
         required: [true, 'Task name required!'],
         //*removes extra spaces
-        trim: true,
-        maxlength: [30, 'Task name cannot be more than 30 characters']
+        trim: true
     },
     
     completed: {
